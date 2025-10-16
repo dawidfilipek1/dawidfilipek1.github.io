@@ -1,0 +1,17 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+}
+
+.header{
+    background-color: rgb(223, 196, 163);
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+    padding:10px;
+    font-size: 1.2em;
+}
