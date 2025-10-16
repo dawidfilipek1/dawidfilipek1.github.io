@@ -1,0 +1,19 @@
+#myDiv{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: bisque;
+    color:rgb(70, 66, 66);
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(240, 215, 184);
+}
+
+.naglowki{
+    display:inline-block;
+}
+
+#projekty2{
+    background-color: aqua;
+}
