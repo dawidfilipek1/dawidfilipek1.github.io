@@ -1,19 +1,27 @@
 #myDiv{
     text-align: center;
     font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: bisque;
     color:rgb(70, 66, 66);
     margin: 0px;
 }
 
 body{
-    background-color: rgb(240, 215, 184);
+    margin:10;
+    padding: 10;
+    background-color: rgb(194, 166, 133);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .naglowki{
     display:inline-block;
 }
 
-#projekty2{
-    background-color: aqua;
+#projektyNieParzyste{
+    background-color: rgb(101, 163, 163);
+}
+
+#projektyParzyste{
+    background-color: rgb(108, 180, 180);
 }
