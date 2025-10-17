@@ -1,27 +1,36 @@
+#divHead{
+    background-color: rgb(235, 204, 166);
+    padding-left: 10px;
+}
+
 #h1{
-    margin: 0;
-    padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.2em;
+    color:rgb(37, 37, 37);
 }
 
 body{
+    margin:0px;
+    padding:0px;
     background-color: bisque;
     font-size: 1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #table1{
+    padding:10px;
     background-color:rgb(226, 198, 163);
     color:rgb(39, 39, 122);
 }
 
 #table2{
+    padding:10px;
     background-color: rgb(238, 198, 149);
     color:rgb(29, 29, 88);
 }
 
 #table3{
+    padding:10px;
     background-color: rgb(236, 204, 163);;
     color: rgb(38, 38, 165);
 }
