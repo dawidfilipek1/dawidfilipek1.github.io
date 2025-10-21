@@ -1,17 +1,30 @@
 body{
-    padding: 10px;
+    padding: 0px;
     margin: 0;
-    background-color: bisque;
+    background-color: rgb(40, 48, 97);
 }
 
 .header{
     text-align: center;
-    background-color: rgb(223, 196, 163);
-    padding-left: 10px;
+    background-color: rgb(28, 37, 88);
     font-size: 1.5em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#formularz{
+    margin:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:rgb(17, 17, 17);
+}
+
 label{
     font-size: 1.2em;
+}
+
+#submit{
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
 }
