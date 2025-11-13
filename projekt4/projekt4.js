@@ -27,5 +27,4 @@ function clearDisplay(){
 
 function sumOfCalculation(){
     display.value = eval(display.value);
-    lastWasOperation = false;
 }
