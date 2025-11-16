@@ -3,12 +3,12 @@ async function wyswietlXML() {
         fetch('plik.xml'),
         fetch('styl.xsl')
     ]).catch(error =>{
-        console.error("Błąd ładowania plików.")
+        console.error("Błąd przy ładowaniu plików")
         return [null, null];
     });
 
     if(!xmlResponse || !xmlResponse.ok || !xslRespone.ok){
-        document.getElementById('formularz').innerHTML = '<h2>Błąd ładowania danych</h2>';
+        document.getElementById('formularz').innerHTML = '<h2>Błąd wczytania danych</h2>';
         return;
     }
 
@@ -29,7 +29,7 @@ async function wyswietlXML() {
         formularzDiv.appendChild(wynikFragment);
     }
     else{
-        formularzDiv.innerHTML = "Błąd transformacji XSLT";
+        formularzDiv.innerHTML = "Błąd";
     }
 
 }
