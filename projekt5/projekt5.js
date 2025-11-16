@@ -19,6 +19,32 @@ async function wyswietlXML() {
     const xslDoc = parser.parseFromString(xslText, 'text/xml');
     const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
+
+    let lacznaCena = 0;
+    const towary = xmlDoc.querySelectorAll('towar > *');
+
+    towary.forEach(towar => {
+        if(towar.querySelector('cena')){
+            const zl = parseFloat(towar.querySelector('cena > zl').textContent) || 0;
+            const gr = parseFloat(towar.querySelector('cena > gr').textContent) || 0;
+
+            lacznaCena += (zl*100) + gr;
+        }
+    });
+
+    const totalZl = Math.floor(lacznaCena/100);
+    const totalGr = lacznaCena % 100;
+    const formatedCena = `${totalZl},${totalGr.toString().padStart(2,'0')}zł`;
+
+    const razemElement = xmlDoc.createElement('razem');
+    razemElement.textContent = formatedCena;
+
+    const towarNode = xmlDoc.querySelector('towar');
+    if(towarNode){
+        towarNode.appendChild(razemElement);
+    }
+
+
     const xsltProcessor = new XSLTProcessor();
     xsltProcessor.importStylesheet(xslDoc);
 
